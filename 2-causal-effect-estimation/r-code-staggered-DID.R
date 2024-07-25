@@ -12,4 +12,7 @@ library(tidyverse)
 df = read_csv("data-final-assessment.csv")
 
 did_multiplegt(mode='old', df=df, Y='Turnout_idea', G='cid', T='year', D='CV_idea', 
-               placebo=5, dynamic=5, brep=0, parallel=TRUE)#, cluster='cid'
+               placebo=5, dynamic=5, brep=30, parallel=TRUE)#, cluster='cid'
+
+did_multiplegt(mode='dyn', df=df, outcome='Turnout_idea', group='cid', time='interval', 
+               treatment='CV_idea', placebo=3, effects=5, bootstrap=30, cluster='cid')
