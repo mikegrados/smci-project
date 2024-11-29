@@ -5,3 +5,4 @@ This repository contains the code for data analysis and replication for our fina
 - **2-causal-effect-estimation:** R codes that estimate the causal effect via TWFE and Staggered Difference in Difference.
 - **Final Project Grozovskiy & Grados:** The final project itself.
 - **project-presentation:** Summary of the work.
+- **PAP Grados & Grozovskiy:** Pre-analysis plan (preregistration).
